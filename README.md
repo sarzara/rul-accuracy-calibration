@@ -2,10 +2,6 @@
 
 **Point accuracy and interval calibration of remaining-useful-life (RUL) models on NASA C-MAPSS**
 
-MSc thesis code, Sahar Zare, GISMA University of Applied Sciences (supervisor: Christoph Metzner), 2026.
-
-> **Status:** draft. All experiments are finished; the thesis text is under revision.
-
 ---
 
 ## Research question
