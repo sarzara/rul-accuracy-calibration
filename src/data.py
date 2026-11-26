@@ -5,7 +5,7 @@ Design rules (enforced here, audited in review):
   * Normalisation statistics are fit on training units only (per fold).
   * Regimes unseen in the source are normalised with statistics from the
     *unlabelled* target inputs (label-free, transductive). This is stated
-    explicitly in the thesis as a form of unsupervised alignment.
+    explicitly in the write-up as a form of unsupervised alignment.
 """
 from __future__ import annotations
 

@@ -16,7 +16,7 @@ All were found by an independent code review carried out after the first analysi
 
 **Status: exploratory, not pre-registered.** H1–H4 and every number in the main analysis are unchanged.
 
-**Why.** Model-based post-hoc recalibration is the main alternative to conformal prediction for repairing miscalibrated RUL intervals in the prognostics literature (isotonic recalibration of Kuleshov et al., 2018; its use for Bayesian RUL models by Lin & Li, 2022; variance scaling of Levi et al., 2019). Without it a reader cannot tell whether the miscalibration of the native gradient-boosting intervals could have been fixed more cheaply.
+**Why.** Model-based post-hoc recalibration is the main alternative to conformal prediction for repairing miscalibrated RUL intervals in the prognostics literature (isotonic recalibration of Kuleshov et al., 2018; its use for Bayesian RUL models by Lin & Li, 2022; variance scaling of Levi et al., 2022). Without it a reader cannot tell whether the miscalibration of the native gradient-boosting intervals could have been fixed more cheaply.
 
 **Plan, fixed before running (`run_recal.py`, `analyze_recal.py`).**
 1. Re-fit the three models with the same seeds and splits as the main study; abort if the re-fitted test-set point predictions differ from the saved ones (max abs. difference > 1e-3 cycles).
@@ -26,7 +26,7 @@ All were found by an independent code review carried out after the first analysi
 5. Evaluation exactly as in the main study: test engines, clipping to [0, 125], PICP/MPIW/IS at 50–95%, calibration error CE over the six levels, seed-averaged per-engine values, 2,000-sample engine bootstrap; paired engine-bootstrap differences in CE between recalibrated and native, and between recalibrated and conformal intervals, per model; coverage at 90% by true-RUL band.
 6. Reporting: all results labelled exploratory; no new hypothesis is claimed as confirmed.
 
-**Effect.** Adds `results/raw_recal/`, `results/tables/recal_*.csv` and `results/figures/fig5_recalibration.*`; Section 7.8 of the thesis.
+**Effect.** Adds `results/raw_recal/`, `results/tables/recal_*.csv` and `results/figures/fig5_recalibration.*`; Section 7.8 of the write-up.
 
 **Post-plan diagnostic (added after the D7 results were seen).** `analyze_recal.py` also writes `recal_lstm_tail_diagnostic.csv`, which compares the LSTM's maximum-likelihood variance-scaling factor with the factor needed for 90% coverage on the calibration windows. It explains a result; it changes none.
 
@@ -48,4 +48,4 @@ All were found by an independent code review carried out after the first analysi
 6. Pre-specified comparisons (paired engine bootstrap): (i) native CE: ensemble vs single LSTM, MC dropout vs single LSTM, ensemble vs gradient boosting; (ii) RMSE: ensemble vs single LSTM, ensemble vs gradient boosting; (iii) adaptive vs standard conformal per model: CE, MPIW and IS at 80/90/95%, and coverage at 90% for true RUL <= 40.
 7. Reporting: all D8 results labelled exploratory; no hypothesis is claimed as confirmed; a resolved difference means a 95% interval excluding zero.
 
-**Effect.** Adds `results/raw_uq/`, `results/tables/uq_*.csv`, `results/figures/fig6_uq.*`; Section 7.9 of the thesis.
+**Effect.** Adds `results/raw_uq/`, `results/tables/uq_*.csv`, `results/figures/fig6_uq.*`; Section 7.9 of the write-up.

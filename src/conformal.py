@@ -13,7 +13,7 @@ the finite-sample correction exact, including the regime where the valid
 interval is infinite (e.g. k=5 calibration engines at a=0.1) -- this fixes
 review issue C2.
 
-Guarantee caveats (stated in the thesis):
+Guarantee caveats (documented in the write-up):
   * CV+ (Barber et al., 2021) guarantees 1-2a in the worst case (~1-a in practice).
   * Unit-balanced weighting targets a test point drawn uniformly over the windows of
     a fresh engine. NASA's official test truncation is a different distribution

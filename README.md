@@ -43,7 +43,7 @@ Seed-averaged over five runs; 95% engine-bootstrap intervals are in `main/result
 ## Repository structure
 
 ```
-main/                     Main study (the thesis)
+main/                     Main study
   PREREGISTRATION.md      Hypotheses H1–H4 and analysis plan, frozen before the main runs
   PREREGISTRATION.sha256  Checksum of the pre-registration
   DEVIATIONS.md           Every change after pre-registration (D1–D8), with reason and effect
@@ -56,7 +56,7 @@ main/                     Main study (the thesis)
   results/tables/         All result tables (CSV)
   results/figures/        All figures (PNG, PDF)
 src/                      Shared modules: data loading and windows, features, conformal methods; test_sanity.py
-RUL_thesis_colab.ipynb    Runs the whole study in Google Colab
+RUL_colab.ipynb    Runs the whole study in Google Colab
 SHA256SUMS.txt            Checksums of the C-MAPSS files used
 ```
 
@@ -80,7 +80,7 @@ Requirements: Python 3.12+, CPU only. Install with `pip install -r requirements.
    python analyze_uq.py
    ```
 
-A Colab notebook that runs everything in one go: `RUL_thesis_colab.ipynb` (open it in Google Colab).
+A Colab notebook that runs everything in one go: `RUL_colab.ipynb` (open it in Google Colab).
 
 Re-runs with other library versions can differ in the third decimal place; the conclusions do not change.
 
