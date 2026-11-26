@@ -5,7 +5,7 @@ point predictions reproduce the saved main-study outputs, then builds recalibrat
 calibration engines:
   * isotonic recalibration (Kuleshov et al., 2018): map nominal quantile levels through the
     engine-weighted empirical CDF of the calibration PIT values (all three models);
-  * variance scaling (Levi et al., 2019): sigma * s with s^2 = engine-weighted mean squared z (Ridge, LSTM).
+  * variance scaling (Levi et al., 2022): sigma * s with s^2 = engine-weighted mean squared z (Ridge, LSTM).
 Saves results/raw_recal/{FD}_seed{s}.npz. No metric is computed here.
 
 Usage: python run_recal.py FD001 0
