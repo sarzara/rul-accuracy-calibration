@@ -1,0 +1,22 @@
+{
+ "subset": "FD001",
+ "seed": 4,
+ "M": 5,
+ "T": 50,
+ "member0_epochs": 20,
+ "member1_epochs": 23,
+ "member2_epochs": 16,
+ "member3_epochs": 22,
+ "member4_epochs": 27,
+ "reproduction_max_abs_diff": {
+  "gbm": 0.0,
+  "lstm": 0.0
+ },
+ "ens_test_mean_sd": 12.848690032958984,
+ "ens_test_epistemic_share": 0.13229340314865112,
+ "mcd_test_mean_sd": 11.850712776184082,
+ "mcd_test_epistemic_share": 0.03555428609251976,
+ "lstm_test_mean_sd": 11.653908729553223,
+ "lstm_test_epistemic_share": 0.0,
+ "seconds": 107.75963258743286
+}

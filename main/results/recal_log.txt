@@ -1,0 +1,10 @@
+[FD001 s1] recal done 41s repro={'ridge': 0.0, 'gbm': 0.0, 'lstm': 0.0}
+[FD001 s2] recal done 43s repro={'ridge': 0.0, 'gbm': 0.0, 'lstm': 0.0}
+[FD001 s3] recal done 42s repro={'ridge': 0.0, 'gbm': 0.0, 'lstm': 0.0}
+[FD001 s4] recal done 42s repro={'ridge': 0.0, 'gbm': 0.0, 'lstm': 0.0}
+[FD004 s0] recal done 82s repro={'ridge': 0.0, 'gbm': 0.0, 'lstm': 0.0}
+[FD004 s1] recal done 72s repro={'ridge': 0.0, 'gbm': 0.0, 'lstm': 0.0}
+[FD004 s2] recal done 75s repro={'ridge': 0.0, 'gbm': 0.0, 'lstm': 0.0}
+[FD004 s3] recal done 75s repro={'ridge': 0.0, 'gbm': 0.0, 'lstm': 0.0}
+[FD004 s4] recal done 79s repro={'ridge': 0.0, 'gbm': 0.0, 'lstm': 0.0}
+finished

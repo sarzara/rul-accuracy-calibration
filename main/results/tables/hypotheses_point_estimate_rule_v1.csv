@@ -1,0 +1,11 @@
+hypothesis,subset,detail,result
+H1,FD001,"RMSE rank ['gbm', 'ridge', 'lstm']; native CE rank ['ridge', 'lstm', 'gbm']",supported
+H2,FD001,"outside ±0.05: [('ridge', 0.8, np.float64(0.898)), ('ridge', 0.9, np.float64(0.952))]",not supported
+H3,FD001,"L=0.8: MPIW rank ['gbm', 'lstm', 'ridge']; MAE rank ['gbm', 'ridge', 'lstm']; adjacent pairs separated: [True, True]",not supported
+H3,FD001,"L=0.9: MPIW rank ['gbm', 'lstm', 'ridge']; MAE rank ['gbm', 'ridge', 'lstm']; adjacent pairs separated: [True, False]",inconclusive
+H3,FD001,"L=0.95: MPIW rank ['gbm', 'ridge', 'lstm']; MAE rank ['gbm', 'ridge', 'lstm']; adjacent pairs separated: [True, True]",supported
+H1,FD004,"RMSE rank ['gbm', 'lstm', 'ridge']; native CE rank ['lstm', 'ridge', 'gbm']",supported
+H2,FD004,all within ±0.05,supported
+H3,FD004,"L=0.8: MPIW rank ['gbm', 'lstm', 'ridge']; MAE rank ['gbm', 'lstm', 'ridge']; adjacent pairs separated: [True, True]",supported
+H3,FD004,"L=0.9: MPIW rank ['gbm', 'lstm', 'ridge']; MAE rank ['gbm', 'lstm', 'ridge']; adjacent pairs separated: [True, True]",supported
+H3,FD004,"L=0.95: MPIW rank ['gbm', 'lstm', 'ridge']; MAE rank ['gbm', 'lstm', 'ridge']; adjacent pairs separated: [True, True]",supported

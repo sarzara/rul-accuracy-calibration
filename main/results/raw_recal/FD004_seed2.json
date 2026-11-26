@@ -1,0 +1,24 @@
+{
+ "subset": "FD004",
+ "seed": 2,
+ "reproduction_max_abs_diff": {
+  "ridge": 0.0,
+  "gbm": 0.0,
+  "lstm": 0.0
+ },
+ "n_cal_engines": 75,
+ "ridge_varscale_s": 0.9939162551894295,
+ "lstm_varscale_s": 1.3618436863686132,
+ "gbm_native_reproduction": {
+  "0.5": 2.500000002569891e-07,
+  "0.6": 2.0000000233721948e-07,
+  "0.7": 1.500000053056283e-07,
+  "0.8": 1.0000000116860974e-07,
+  "0.9": 5.000000058430487e-08,
+  "0.95": 2.500001983207767e-08
+ },
+ "ridge_cal_native_cov90_engine_weighted": 0.9087549544497769,
+ "gbm_cal_native_cov90_engine_weighted": 0.8505752246515328,
+ "lstm_cal_native_cov90_engine_weighted": 0.894510160306725,
+ "seconds": 75.29638624191284
+}
